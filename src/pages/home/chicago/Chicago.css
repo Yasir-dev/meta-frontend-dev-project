@@ -1,0 +1,57 @@
+.chicago {
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+}
+
+.chicago-description {
+  grid-column: 1;
+}
+
+.chicago-description h1 {
+  color: #F4CE14;
+}
+
+.chicago-description p {
+  padding-top: 1.5rem;
+}
+
+.chicago-chefs {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chicago-chefs img {
+  border-radius: 1rem;
+}
+
+@media (max-width: 915px) {
+.chicago {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+
+.chicago-chefs {
+  grid-column: 1;
+  flex-direction: row;
+}
+
+.chicago-chefs img {
+  max-width: 50%;
+}
+}
+
+@media (max-width: 715px) {
+.chicago {
+  grid-template-rows: repeat(3, auto);
+}
+
+.chicago-chefs {
+  flex-direction: column;
+}
+
+.chicago-chefs img {
+  max-width: 100%;
+}
+}

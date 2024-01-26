@@ -1,0 +1,32 @@
+.card {
+  grid-column: auto;
+  grid-row: 2;
+  min-height: 22.75rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+
+.card img {
+  width: 8rem;
+  margin: 0 auto 0.5rem auto;
+  border-radius: 50%;
+}
+
+.card h4 {
+  margin: 0 auto 1rem auto;
+}
+
+.card span {
+  color: #f4ce14;
+}
+
+@media (max-width: 949px) {
+  .card {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
